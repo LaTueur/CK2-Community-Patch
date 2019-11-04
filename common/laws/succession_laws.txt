@@ -1388,7 +1388,10 @@ succession_laws = {
 	}
 	succ_papal_succession = {
 		potential = {
-			title = k_papal_state
+			OR = {
+				title = k_papal_state
+				title = d_fraticelli
+			}
 		}
 		
 		effect = {
@@ -1430,7 +1433,7 @@ succession_laws = {
 					title = e_roman_empire
 				}
 			}
-			NOT = { title = k_papal_state }
+			NOR = { title = k_papal_state title = d_fraticelli }
 			temporary = no
 			OR = {
 				is_primary_type_title = yes
