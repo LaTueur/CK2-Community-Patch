@@ -1819,9 +1819,11 @@ character_event = { #chest_pain can lead to pneumonia tuberculosis cancer
 						random_list = { #chest pains can last a long time
 							100 = {
 								character_event = { id = RIP.11006 days = 1725 random = 200 }
+								set_character_flag = long_term_symptom
 							}
 							100 = {
 								character_event = { id = RIP.11006 days = 3650 random = 365 }
+								set_character_flag = long_term_symptom
 							}
 							100 = {
 								modifier = {
@@ -1829,6 +1831,7 @@ character_event = { #chest_pain can lead to pneumonia tuberculosis cancer
 									age = 50 
 								}
 								character_event = { id = RIP.11006 days = 7300 random = 3650 }
+								set_character_flag = long_term_symptom
 							}
 							100 = {
 								modifier = {
