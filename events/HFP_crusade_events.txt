@@ -6434,6 +6434,13 @@ letter_event = {
     trigger = {
         check_if_not_fourth_crusade_trigger = yes
         check_if_alternate_crusades_trigger = yes
+		any_war = {
+			using_cb = new_crusade
+			war_participation = {
+				who = PREV
+				score <= 0.001
+			}
+		}
     }
 
     immediate = {
