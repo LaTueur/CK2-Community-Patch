@@ -14032,7 +14032,7 @@ character_event = {
 			text = expelling_holy_order_event_tooltip_a
 		}
 		hidden_tooltip = {
-			d_hashshashin = {
+			d_bektashi = {
 				holder_scope = {
 					character_event = {
 						id = SoA.1460
@@ -14041,7 +14041,7 @@ character_event = {
 			}
 			
 			add_character_modifier = {
-				name = expelled_d_hashshashin
+				name = expelled_d_bektashi
 				duration = -1
 				inherit = yes
 			}
