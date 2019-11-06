@@ -7200,7 +7200,7 @@ character_event = {
 		event_target:dw_desecration_target = {
 			holder_scope = {
 				if = {
-					limit = { is_abroad = no }
+					limit = { is_abroad = no NOT = { character = ROOT } }
 					random_list = {
 						50 = {}
 						50 = {
@@ -7270,6 +7270,9 @@ character_event = {
 		add_society_currency_minor_effect = yes
 		event_target:desecration_holder = {
 			if = {
+				limit = {
+					has_character_flag = desecration_at_home
+				}
 				death = {
 					death_reason = death_sacrificed
 				}
@@ -7289,8 +7292,13 @@ character_event = {
 		name = EVTOPT_MNM_7113_INTRIGUE
 		add_society_currency_minor_effect = yes
 		event_target:desecration_holder = {
-			death = {
-				death_reason = death_sacrificed
+			if = {
+				limit = {
+					has_character_flag = desecration_at_home
+				}
+				death = {
+					death_reason = death_sacrificed
+				}
 			}
 		}
 		hidden_effect = {
