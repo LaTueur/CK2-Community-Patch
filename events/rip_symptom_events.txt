@@ -1814,6 +1814,7 @@ character_event = { #chest_pain can lead to pneumonia tuberculosis cancer
 							NOR = {
 								has_character_flag = developing_illness
 								has_character_flag = disease_not_serious
+								has_character_flag = long_term_symptom
 							}
 						}
 						random_list = { #chest pains can last a long time
