@@ -5377,27 +5377,6 @@ pepin_religious = {
 			title = d_ancona
 			title = d_ferrara
 			title = d_benevento
-
-			d_latium = {
-				any_de_jure_vassal_title = { title = PREVPREV }
-			}
-			d_spoleto = {
-				any_de_jure_vassal_title = { title = PREVPREV }
-			}
-			d_ancona = {
-				any_de_jure_vassal_title = { title = PREVPREV }
-			}
-			d_ferrara = {
-				any_de_jure_vassal_title = { title = PREVPREV }
-			}
-			d_benevento = {
-				any_de_jure_vassal_title = { title = PREVPREV }
-			}
-		}
-		any_de_jure_vassal_title = {
-			location = {
-				region = world_europe_south_italy
-			}
 		}
 	}
 
@@ -5422,8 +5401,38 @@ pepin_religious = {
 				religion = fraticelli
 			}
 		}
+		FROM = {
+			NOT = { has_landed_title = k_papal_state }
+			NOT = { has_landed_title = d_fraticelli }
+			OR = { 		#Target must either be a pagan or heretic of any government form, or it must be a disliked Catholic/Fraticelli who is not a bishop.
+				AND = { 
+					is_theocracy = no 
+					religion = ROOT
+					ROOT = { 
+						religion_head = { 
+							NOT = { 
+								opinion = { 
+									who = FROM
+									value = 50 # should be high to cancel
+								}
+							}
+						} 
+					} 
+				}
+				excommunicated_for = ROOT
+				NOT = { religion_group = ROOT } 
+				is_heresy_of = ROOT
+				ROOT = { has_character_flag = flag_pepin_for_coronation } # don't mess up his journey
+			}
+		}
 	}
-
+	is_valid_title = {
+		FROM = {
+			any_realm_province = {
+				de_jure_liege_or_above = PREVPREV
+			}
+		}
+	}
 	on_invalidation = {
 		ROOT = { 
 			clr_character_flag = flag_pepin_for_coronation
@@ -5541,7 +5550,7 @@ pepin_religious = {
 			if = {
 				limit = {
 					NOT = {
-						has_character_modifier = known_satanist
+						religion = ROOT
 					}
 				}
 				religion_authority = {
@@ -5620,6 +5629,7 @@ pepin_religious = {
 					if = {
 						limit = {
 							has_ambition = obj_strengthen_religion
+							NOT = { religion = ROOT }
 						}
 						change_variable = { which = strengthen_religion value = 1 }
 					}
@@ -5649,16 +5659,21 @@ pepin_religious = {
 			}
 		}
 		FROM = { 
-			religion_authority = {
-				modifier = won_holy_war
-				years = 20
-			}
-			hidden_tooltip = {
-				if = {
-					limit = {
-						has_ambition = obj_strengthen_religion
+			if = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				religion_authority = {
+					modifier = won_holy_war
+					years = 20
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_ambition = obj_strengthen_religion
+						}
+						change_variable = { which = strengthen_religion value = 1 }
 					}
-					change_variable = { which = strengthen_religion value = 1 }
 				}
 			}
 		}
@@ -5721,46 +5736,56 @@ pepin_religious = {
 		}
 		modifier = { #I like the Pope and I will help him.
 			factor = 1.5
-			religion_head = {
-				reverse_opinion = { 
-					who = ROOT 
-					value = 50 
+			ROOT = {
+				religion_head = {
+					reverse_opinion = { 
+						who = ROOT 
+						value = 50 
+					}
 				}
 			}
 		}
 		modifier = { #I like the Pope and I will help him.
 			factor = 1.5
-			religion_head = {
-				reverse_opinion = { 
-					who = ROOT 
-					value = 60 
+			ROOT = {
+				religion_head = {
+					reverse_opinion = { 
+						who = ROOT 
+						value = 60 
+					}
 				}
 			}
 		}
 		modifier = { #I like the Pope and I will help him.
 			factor = 1.5
-			religion_head = {
-				reverse_opinion = { 
-					who = ROOT 
-					value = 70 
+			ROOT = {
+				religion_head = {
+					reverse_opinion = { 
+						who = ROOT 
+						value = 70 
+					}
 				}
 			}
 		}
 		modifier = { #I like the Pope and I will help him.
 			factor = 2
-			religion_head = {
-				reverse_opinion = { 
-					who = ROOT 
-					value = 80 
+			ROOT = {
+				religion_head = {
+					reverse_opinion = { 
+						who = ROOT 
+						value = 80 
+					}
 				}
 			}
 		}
 		modifier = { #I like the Pope and I will help him.
 			factor = 2
-			religion_head = {
-				reverse_opinion = { 
-					who = ROOT 
-					value = 90 
+			ROOT = {
+				religion_head = {
+					reverse_opinion = { 
+						who = ROOT 
+						value = 90 
+					}
 				}
 			}
 		}
@@ -5777,39 +5802,15 @@ pepin_religious = {
 		}
 		modifier = { #The Papacy doesn't hold Rome, take action!
 			factor = 5
-			FROM = {
-				OR = {
-					has_landed_title = d_latium
-					any_vassal = { has_landed_title = d_latium }
-					d_latium = {
-						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
-					}
-				}
-			}
+			title = d_latium
 		}
 		modifier = { 
 			factor = 2
-			FROM = {
-				OR = {
-					has_landed_title = d_spoleto
-					any_vassal = { has_landed_title = d_spoleto }
-					d_spoleto = {
-						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
-					}
-				}
-			}
+			title = d_spoleto
 		}
 		modifier = { #Historical tweaking
 			factor = 0.25
-			FROM = {
-				OR = {
-					has_landed_title = d_benevento
-					any_vassal = { has_landed_title = d_benevento }
-					d_benevento = {
-						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
-					}
-				}
-			}
+			title = d_benevento
 		}
 		modifier = {
 			factor = 0.8
