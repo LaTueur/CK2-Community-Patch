@@ -49,7 +49,22 @@ character_event = {
                 value = off
             }
         }
-		spouse = { has_character_flag = is_olga }
+		NOT = { trait = incapable }
+		NOT = { trait = celibate }
+		NOT = { is_ascetic_trigger = yes }
+		NOT = { trait = eunuch }
+		NOT = { has_character_modifier = hindu_ascetic }
+		NOT = { has_character_modifier = buddhist_ascetic }
+		NOT = { has_character_modifier = jain_naked_ascetic }
+		spouse = {
+			has_character_flag = is_olga
+			NOT = { trait = incapable }
+			NOT = { trait = celibate }
+			NOT = { is_ascetic_trigger = yes }
+			NOT = { has_character_modifier = hindu_ascetic }
+			NOT = { has_character_modifier = buddhist_ascetic }
+			NOT = { has_character_modifier = jain_naked_ascetic }
+		}
 	}
 
 	immediate = {
