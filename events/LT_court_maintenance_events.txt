@@ -361,37 +361,12 @@ character_event = {
 	    			trigger = {
 	    				NOT = { is_lover = event_target:courtier_2 }
 						NOT = { is_friend = event_target:courtier_2 }
-						NOT = { opinion = { who = event_target:courtier_2 value = 5 } }
-                        OR = {
-                            AND = {
-                                is_female = yes
-                                event_target:courtier_2 = {
-                                    is_female = no
-                                }
-                            }
-                            AND = {
-                                is_female = no
-                                event_target:courtier_2 = {
-                                    is_female = yes
-                                }
-                            }
-                            AND = {
-                                is_female = yes
-                                trait = homosexual
-                                event_target:courtier_2 = {
-                                    is_female = yes
-                                    trait = homosexual
-                                }
-                            }
-                            AND = {
-                                is_female = no
-                                trait = homosexual
-                                event_target:courtier_2 = {
-                                    is_female = no
-                                    trait = homosexual
-                                }
-                            }
-                        }
+						NOT = { is_rival = event_target:courtier_2 }
+						opinion = { who = event_target:courtier_2 value = 5 }
+                        event_target:courtier_2 = {
+							prev_attraction_trigger = yes
+							attacted_to_prev_trigger = yes
+						}
 	    			}
 	    			add_lover = event_target:courtier_2
 	    		}
