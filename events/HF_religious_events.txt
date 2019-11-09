@@ -10297,7 +10297,14 @@ character_event = {
 						mother_even_if_dead = {
 							any_spouse_even_if_dead = {
 								is_father = ROOT
-								is_close_relative = PREV
+								OR = {
+									is_close_relative = PREV
+									is_ancestor_of = PREV
+									is_descendant_of = PREV
+									sibling = PREV
+									is_aunt_uncle_of = PREV
+									is_nibling_of = PREV
+								}
 							}
 						}
 					} 
