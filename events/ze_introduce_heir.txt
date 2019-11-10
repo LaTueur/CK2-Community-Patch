@@ -376,6 +376,7 @@ character_event = {
 						NOT = { has_character_flag = ZE_evt_heir_8 }
 						event_target:introduced_heir = {
 							is_female = no
+							NOT = { trait = homosexual }
 						}
 						any_vassal = {
 							is_female = no
@@ -388,6 +389,7 @@ character_event = {
 							}
 							any_spouse = {
 								is_female = yes
+								NOT = { trait = homosexual }
 								ai = yes
 								prisoner = no
 								age = 20
@@ -1376,6 +1378,7 @@ character_event = {
 		event_target:introduced_heir = { is_alive = yes }
 		any_vassal = {
 			is_female = no
+			NOT = { trait = homosexual }
 			ai = yes
 			is_married = yes
 			prisoner = no
@@ -1385,6 +1388,7 @@ character_event = {
 			}
 			any_spouse = {
 				is_female = yes
+				NOT = { trait = homosexual }
 				ai = yes
 				prisoner = no
 				age = 20
@@ -1423,6 +1427,7 @@ character_event = {
 				}
 				any_spouse = {
 					is_female = yes
+					NOT = { trait = homosexual }
 					ai = yes
 					prisoner = no
 					age = 20
@@ -1438,6 +1443,7 @@ character_event = {
 			random_spouse = {
 				limit = {
 					is_female = yes
+					NOT = { trait = homosexual }
 					ai = yes
 					prisoner = no
 					age = 20
