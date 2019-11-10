@@ -28711,6 +28711,10 @@ clr_flags_introduce_heir_effect = {
 	clr_character_flag = ZE_evt_heir_6
 	clr_character_flag = ZE_evt_heir_7
 	clr_character_flag = ZE_evt_heir_8
+	clr_character_flag = ZE_evt_heir_nothing_1
+	clr_character_flag = ZE_evt_heir_nothing_2
+	clr_character_flag = ZE_evt_heir_nothing_3
+	clr_character_flag = ZE_evt_heir_nothing_4
 }
 
 generate_mask_effect = {
