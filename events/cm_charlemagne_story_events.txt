@@ -1565,6 +1565,10 @@ narrative_event = {
 		FROM = {
 			title = b_paderborn
 			owner = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
 				top_liege = {
 					any_war = {
 						attacker = { character = ROOT }
