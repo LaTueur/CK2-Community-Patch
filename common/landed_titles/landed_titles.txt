@@ -3879,12 +3879,14 @@ e_hre = {                      # Created by special decision only
 
 		allow = {
 			conditional_tooltip = {
-				k_saxon = {
-					is_titular = yes
+				trigger = {
+					k_saxon = {
+						is_titular = yes
+					}
 				}
-			}
-			k_saxon = {
-				is_titular = no
+				k_saxon = {
+					is_titular = no
+				}
 			}
 		}
 
@@ -3903,12 +3905,14 @@ e_hre = {                      # Created by special decision only
 
 		allow = {
 			conditional_tooltip = {
-				k_franconia = {
-					is_titular = yes
+				trigger = {
+					k_franconia = {
+						is_titular = yes
+					}
 				}
-			}
-			k_franconia = {
-				is_titular = no
+				k_franconia = {
+					is_titular = no
+				}
 			}
 		}
 	}
@@ -3924,12 +3928,14 @@ e_hre = {                      # Created by special decision only
 
 		allow = {
 			conditional_tooltip = {
-				k_swabia = {
-					is_titular = yes
+				trigger = {
+					k_swabia = {
+						is_titular = yes
+					}
 				}
-			}
-			k_swabia = {
-				is_titular = no
+				k_swabia = {
+					is_titular = no
+				}
 			}
 		}
 	}
@@ -10458,7 +10464,7 @@ e_byzantium = {
 			color={ 255 173 196 }
 			color2={ 255 255 255 }
 			
-			capital = 601 # Imeretia
+			capital = 600 # Abkhazia
 			
 			c_abkhazia = {
 				color={ 254 160 160 }
@@ -11893,7 +11899,7 @@ e_italy = {
 			}
 		}	
 		d_corsica = {
-			color={ 210 233 278 }
+			color={ 210 233 178 }
 			color2={ 255 255 255 }
 			
 			capital = 324 # Corsica
@@ -12742,7 +12748,7 @@ e_scandinavia = {
 			color={ 30 70 225 }
 			color2={ 255 255 255 }
 			
-			capital = 291 # Värend
+			capital = 298 # Värend
 			
 			swedish = "Tiohärad"
 			
@@ -16865,7 +16871,7 @@ e_wendish_empire = {
 			color={ 150 70 70 }
 			color2={ 255 255 255 }
 			
-			capital = 421 # Samogitia
+			capital = 422 # Scalovia
 			
 			german = "Sclavonia"
 			prussian = "Sclavonia"
@@ -17059,7 +17065,7 @@ e_wendish_empire = {
 			color={ 110 50 50 }
 			color2={ 255 255 255 }
 			
-			capital = 375 # Liivimaa
+			capital = 1596 # Riga
 			
 			pagan_coa = {
 				template = 0
@@ -22292,7 +22298,7 @@ e_tartaria = {
 			color={ 210 185 15 }
 			color2={ 255 255 255 }
 			
-			capital = 891 # Tyumen
+			capital = 893 # Sibir
 		
 			c_sibir = {
 				color={ 227 174 31 }
@@ -26354,7 +26360,6 @@ e_persia = {
 			greek = "Asoristan"
 			alan = "Asoristan"
 			georgian = "Asoristan"
-			assyrian = "Asoristan"
 			assyrian = "Asoristan"
 			
 			c_karbala = {
@@ -34756,6 +34761,8 @@ e_arabia = {
 			color={ 30 250 124 }
 			color2={ 255 255 255 }
 
+			capital = 795 # Asyut
+			
 			coptic = "Sioout"
 			greek = "Lycopolis"
 			roman = "Oasis Magna"
@@ -34962,7 +34969,7 @@ e_arabia = {
 		alan = "Philistia"
 		georgian = "Philistia"
 		assyrian = "Philistia"
-		roman = "Judea"
+		#roman = "Judea"
 		
 		assimilate = no # Duchies cannot de jure drift IN or OUT of this title
 		
@@ -37166,7 +37173,7 @@ e_maghreb = {
 			color={ 74 242 62 }
 			color2={ 255 255 255 }
 			
-			capital = 822 # Laghouat/Ouled Nail
+			capital = 828 # Laghouat/Ouled Nail
 			
 			c_mzab = { # Ghardaia
 				color={ 39 157 50 }
@@ -41535,6 +41542,7 @@ e_mali = {
 e_kanem = {
 	color={ 50 230 235 }
 	color2={ 255 255 255 }
+	capital = 1739 # Djimi
 	
 	k_kanem = {
 		color={ 10 215 225 }
