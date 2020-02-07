@@ -14632,7 +14632,7 @@
 }
 260860 = {
 	name = "Ubayd"
-	dynasty = 1062442
+	dynasty = 2062442
 	religion = shiite
 	culture = bedouin_arabic
 	893.1.1 = {

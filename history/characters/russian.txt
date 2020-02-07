@@ -12142,7 +12142,7 @@
 }
 256042 = {
 	name = Oleg		#fictional, d_tivertsi
-	dynasty = 1061019	#Tiveri
+	dynasty = 2061020	#Tiveri
 	religion = "slavic_pagan"
 	culture = "volhynian"
 	745.1.1 = {

@@ -47562,7 +47562,7 @@
 	culture="lithuanian"
 	religion="baltic_pagan"
 }
-1061019 = {
+2061019 = {
 	name="von Hanover"
 	culture="german"
 	religion="catholic"
@@ -47891,6 +47891,11 @@
 }
 1061019 = {
 	name ="Tivertsi"
+	culture="russian"
+	religion="orthodox"
+}
+2061020 = {
+	name ="Tiveri"
 	culture="volhynian"
 	religion="slavic_pagan"
 }
@@ -49680,7 +49685,7 @@
 	name="Bro Erec"
 	culture="breton"
 }
-105946 = {
+205946 = {
 	name="Kernev"
 	culture="breton"
 }
@@ -49803,7 +49808,7 @@
     culture="persian"
     religion="buddhist"
 }
-1059971={
+2059971={
 	name="Kaukabi" 
 	culture="persian"
 	religion="shiite"
@@ -51144,7 +51149,7 @@
 	culture = maghreb_arabic
 	religion = shiite
 }
-1062442 = {
+2062442 = {
 	name = "Ubayid"
 	culture = bedouin_arabic
 	religion = shiite
@@ -51989,7 +51994,7 @@
 	culture = german
 	religion = catholic
 }
-1062594={
+2062594={
 	name="Khursid"
 	culture="persian"
 	religion="zoroastrian"

@@ -5118,7 +5118,7 @@
 }
 252344 = {
 	name="Deniel" # Deniel Drem Rud
-	dynasty=105946 # Kernev
+	dynasty=205946 # Kernev
 	religion="catholic"
 	culture="breton"
 	father=252343
@@ -5131,7 +5131,7 @@
 }
 252345 = {
 	name="Iahan" # Iahan Reith
-	dynasty=105946 # Kernev
+	dynasty=205946 # Kernev
 	religion="catholic"
 	culture="breton"
 	father=252344
@@ -5144,7 +5144,7 @@
 }
 252346 = {
 	name="Deniel" # Deniel Unua
-	dynasty=105946 # Kernev
+	dynasty=205946 # Kernev
 	religion="catholic"
 	culture="breton"
 	father=252345

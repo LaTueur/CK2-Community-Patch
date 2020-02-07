@@ -527,7 +527,7 @@
 	name="von Duckington"
 	culture="duck_culture"
 }
-2000131 = {
+2100131 = {
 	name="mcDucker"
 	culture="duck_culture"
 }
@@ -712,11 +712,11 @@
 	name="Loenberger"
 	culture="dog_culture"
 }
-2000176 = {
+2100176 = {
 	name="Maltese"
 	culture="dog_culture"
 }
-2000176 = {
+2200176 = {
 	name="Maltipoo"
 	culture="dog_culture"
 }

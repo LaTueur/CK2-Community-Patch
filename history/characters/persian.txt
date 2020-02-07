@@ -7562,7 +7562,7 @@
 
 248695 = {
 	name="Hossein" # historical rebel mentioned
-	dynasty=1059971
+	dynasty=2059971
 	religion="shiite"
 	culture="persian"
 	trait=misguided_warrior
