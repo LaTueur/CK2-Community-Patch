@@ -14742,6 +14742,8 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
+							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_hellenic
 						} 
 					}
 				}
@@ -14765,6 +14767,8 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
+							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_hellenic
 						} 
 					}
 				}
@@ -14792,6 +14796,8 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									} 
 								}
 							}
@@ -14811,6 +14817,8 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									} 
 								}
 							}
@@ -14838,6 +14846,8 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
+									has_religion_feature = religion_feature_bon
+									has_religion_feature = religion_feature_hellenic
 								} 
 							}
 						}
@@ -14857,6 +14867,8 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
+									has_religion_feature = religion_feature_bon
+									has_religion_feature = religion_feature_hellenic
 								} 
 							}
 						}
@@ -14952,6 +14964,8 @@ character_event = {
 						has_religion_feature = religion_meritocratic
 						has_religion_feature = religion_matriarchal
 						has_religion_feature = religion_patriarchal
+						has_religion_feature = religion_feature_bon
+						has_religion_feature = religion_feature_hellenic
 					} 
 				}
 			}
@@ -14997,6 +15011,8 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
+							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_hellenic
 						} 
 					}
 				}
@@ -15020,6 +15036,8 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
+							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_hellenic
 						} 
 					}
 				}
@@ -15047,6 +15065,8 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									} 
 								}
 							}
@@ -15066,6 +15086,8 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									} 
 								}
 							}
@@ -15093,6 +15115,8 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
+									has_religion_feature = religion_feature_bon
+									has_religion_feature = religion_feature_hellenic
 								} 
 							}
 						}
@@ -15112,6 +15136,8 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
+									has_religion_feature = religion_feature_bon
+									has_religion_feature = religion_feature_hellenic
 								} 
 							}
 						}

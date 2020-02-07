@@ -26630,6 +26630,8 @@ stable_attribute_improvement_effect = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 							OR = { 
 								trait = naive_appeaser
@@ -26757,6 +26759,8 @@ stable_attribute_improvement_effect = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 							OR = { 
 								trait = misguided_warrior
@@ -26953,6 +26957,8 @@ stable_attribute_improvement_effect = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 							OR = { 
 								trait = indulgent_wastrel
@@ -27148,6 +27154,8 @@ stable_attribute_improvement_effect = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 							OR = { 
 								trait = amateurish_plotter
@@ -27343,6 +27351,8 @@ stable_attribute_improvement_effect = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 							OR = { 
 								trait = detached_priest
@@ -27352,8 +27362,12 @@ stable_attribute_improvement_effect = {
 						}
 						modifier = { 
 							factor = 1.5
-							event_target:scoped_improvement_ruler = { 
-								has_religion_feature = religion_meritocratic #More pressure.
+							event_target:scoped_improvement_ruler = {
+								OR = {
+									has_religion_feature = religion_meritocratic #More pressure.
+									has_religion_feature = religion_feature_bon
+									has_religion_feature = religion_feature_hellenic
+								}
 							}
 						}
 						modifier = { 
