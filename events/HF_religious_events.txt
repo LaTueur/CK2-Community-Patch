@@ -14255,7 +14255,12 @@ character_event = {
 	}
 	option = { 
 		name = EVTOPTAHF23751
-		trigger = { has_religion_feature = religion_astrology } #Synergy
+		trigger = { #Synergy
+			OR = {
+				has_religion_feature = religion_astrology
+				religion = hellenic_pagan_reformed
+			}
+		}
 		custom_tooltip = { text = TT_EVTOPTAHF23751 }
 		hidden_tooltip = { 
 			random_list = { 
