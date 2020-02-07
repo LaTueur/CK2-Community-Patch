@@ -3867,9 +3867,13 @@ narrative_event = {
 					333 = { set_province_flag = flag_rome_primed_for_conversion }
 				}
 				any_province_holding = { 
-					limit = { holding_type = temple } 
+					limit = {
+						holding_type = temple
+						NOT = { title = b_roma }
+					} 
 					destroy_settlement = yes
-				} 
+				}
+				b_roma = { set_name = Lateran }
 			} 
 			any_player = { 
 				limit = { 
