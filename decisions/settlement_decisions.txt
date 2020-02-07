@@ -2910,6 +2910,11 @@ settlement_decisions = {
 			location = {
 				has_province_modifier = incredibly_poor
 			}
+			owner = {
+				any_liege = {
+					character = FROM
+				}
+			}
 		}
 		
 		allow = {
