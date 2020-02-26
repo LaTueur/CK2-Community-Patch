@@ -135,6 +135,8 @@ ask_for_excommunication_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -144,6 +146,10 @@ ask_for_excommunication_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -914,7 +920,8 @@ ask_for_excommunication_chance = {
 			age = 16
 			religion = ROOT_FROM
 			is_feudal = yes
-			primary_title = { holy_order = no }
+			is_landed = yes
+			is_vice_royalty = no
 			OR = { 
 				religion = catholic
 				religion = fraticelli
@@ -924,6 +931,11 @@ ask_for_excommunication_chance = {
 				trait = crowned_by_bishop
 				trait = crowned_by_priest
 				trait = crowned_by_myself
+				trait = crowned_by_priest_rd
+				trait = crowned_by_bishop_rd
+				trait = crowned_by_pope_rd
+				government = order_government
+				government = oligarchic_republic
 			}
 		}
 	}
@@ -1841,6 +1853,8 @@ ask_for_invasion_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -1850,6 +1864,10 @@ ask_for_invasion_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -2620,7 +2638,8 @@ ask_for_invasion_chance = {
 			age = 16
 			religion = ROOT_FROM
 			is_feudal = yes
-			primary_title = { holy_order = no }
+			is_landed = yes
+			is_vice_royalty = no
 			OR = { 
 				religion = catholic
 				religion = fraticelli
@@ -2630,6 +2649,11 @@ ask_for_invasion_chance = {
 				trait = crowned_by_bishop
 				trait = crowned_by_priest
 				trait = crowned_by_myself
+				trait = crowned_by_priest_rd
+				trait = crowned_by_bishop_rd
+				trait = crowned_by_pope_rd
+				government = order_government
+				government = oligarchic_republic
 			}
 		}
 	}
@@ -3467,6 +3491,8 @@ ask_for_divorce_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -3476,6 +3502,10 @@ ask_for_divorce_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -4235,7 +4265,8 @@ ask_for_divorce_chance = {
 			age = 16
 			religion = ROOT_FROM
 			is_feudal = yes
-			primary_title = { holy_order = no }
+			is_landed = yes
+			is_vice_royalty = no
 			OR = { 
 				religion = catholic
 				religion = fraticelli
@@ -4245,6 +4276,11 @@ ask_for_divorce_chance = {
 				trait = crowned_by_bishop
 				trait = crowned_by_priest
 				trait = crowned_by_myself
+				trait = crowned_by_priest_rd
+				trait = crowned_by_bishop_rd
+				trait = crowned_by_pope_rd
+				government = order_government
+				government = oligarchic_republic
 			}
 		}
 	}
@@ -5011,6 +5047,8 @@ ask_to_lift_excommunication_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -5020,6 +5058,10 @@ ask_to_lift_excommunication_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -5770,7 +5812,8 @@ ask_to_lift_excommunication_chance = {
 			age = 16
 			religion = ROOT_FROM
 			is_feudal = yes
-			primary_title = { holy_order = no }
+			is_landed = yes
+			is_vice_royalty = no
 			OR = { 
 				religion = catholic
 				religion = fraticelli
@@ -5781,6 +5824,11 @@ ask_to_lift_excommunication_chance = {
 				trait = crowned_by_bishop
 				trait = crowned_by_priest
 				trait = crowned_by_myself
+				trait = crowned_by_priest_rd
+				trait = crowned_by_bishop_rd
+				trait = crowned_by_pope_rd
+				government = order_government
+				government = oligarchic_republic
 			}
 		}
 	}
@@ -6651,6 +6699,8 @@ ask_for_money_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -6660,6 +6710,10 @@ ask_for_money_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -7520,6 +7574,8 @@ ask_for_crusade_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -7529,6 +7585,10 @@ ask_for_crusade_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -8467,6 +8527,8 @@ ask_for_claim_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -8476,6 +8538,10 @@ ask_for_claim_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
@@ -9240,7 +9306,8 @@ ask_for_claim_chance = {
 			age = 16
 			religion = ROOT_FROM
 			is_feudal = yes
-			primary_title = { holy_order = no }
+			is_landed = yes
+			is_vice_royalty = no
 			OR = { 
 				religion = catholic
 				religion = fraticelli
@@ -9250,6 +9317,11 @@ ask_for_claim_chance = {
 				trait = crowned_by_bishop
 				trait = crowned_by_priest
 				trait = crowned_by_myself
+				trait = crowned_by_priest_rd
+				trait = crowned_by_bishop_rd
+				trait = crowned_by_pope_rd
+				government = order_government
+				government = oligarchic_republic
 			}
 		}
 	}
@@ -10034,6 +10106,8 @@ nominate_bishop_chance = {
 		age = 16
 		religion = FROM
 		is_feudal = yes
+		is_landed = yes
+		is_vice_royalty = no
 		OR = { 
 			religion = catholic
 			religion = fraticelli
@@ -10043,6 +10117,10 @@ nominate_bishop_chance = {
 			trait = crowned_by_bishop
 			trait = crowned_by_priest
 			trait = crowned_by_myself
+			trait = crowned_by_priest_rd
+			trait = crowned_by_bishop_rd
+			trait = crowned_by_pope_rd
+			government = order_government
 		}
 	}
 	additive_modifier = {
