@@ -1697,29 +1697,37 @@ byzantine_elective = {
 		additive_modifier = { #If candidate is elected, he will rule from a capital outside this dejure.
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_political_concerns
-			capital_scope = { de_jure_liege = FROMFROM }
+			capital_scope = { de_jure_liege_or_above = FROMFROM }
 			FROM = {
 				is_ruler = yes 
-				vassal_of = FROMFROM
-				capital_scope = { NOT = { de_jure_liege = ROOT_FROMFROM } }
+				is_vassal_or_below_of = ROOT_FROMFROM
+				capital_scope = { NOT = { de_jure_liege_or_above = ROOT_FROMFROM } }
 			}
 		}
 		additive_modifier = { #Candidate is a foreign ruler.
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_encroaching_foreigner
-			capital_scope = { de_jure_liege = FROMFROM }
+			capital_scope = { de_jure_liege_or_above = FROMFROM }
 			FROM = {
 				is_ruler = yes 
 				NOT = { is_vassal_or_below_of = ROOT_FROMFROM }
+				OR = {
+					capital_scope = { de_jure_liege_or_above = ROOT_FROMFROM }
+					de_jure_liege_or_above = ROOT_FROMFROM
+				}
 			}
 		}
 		additive_modifier = { #Candidate is a foreign non-dejure ruler.
 			value = -500
 			localisation_key = tooltip_feudal_elector_vote_encroaching_foreigner
-			NOT = { capital_scope = { de_jure_liege = FROMFROM } }
+			capital_scope = { de_jure_liege_or_above = FROMFROM }
 			FROM = {
 				is_ruler = yes 
 				NOT = { is_vassal_or_below_of = ROOT_FROMFROM }
+				NOR = {
+					capital_scope = { de_jure_liege_or_above = ROOT_FROMFROM }
+					de_jure_liege_or_above = ROOT_FROMFROM
+				}
 			}
 		}
 
@@ -5419,29 +5427,37 @@ hre_feudal_elective = {
 		additive_modifier = { #If candidate is elected, he will rule from a capital outside this dejure.
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_political_concerns
-			capital_scope = { de_jure_liege = FROMFROM }
+			capital_scope = { de_jure_liege_or_above = FROMFROM }
 			FROM = {
 				is_ruler = yes 
-				vassal_of = FROMFROM
-				capital_scope = { NOT = { de_jure_liege = ROOT_FROMFROM } }
+				is_vassal_or_below_of = ROOT_FROMFROM
+				capital_scope = { NOT = { de_jure_liege_or_above = ROOT_FROMFROM } }
 			}
 		}
 		additive_modifier = { #Candidate is a foreign ruler.
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_encroaching_foreigner
-			capital_scope = { de_jure_liege = FROMFROM }
+			capital_scope = { de_jure_liege_or_above = FROMFROM }
 			FROM = {
 				is_ruler = yes 
 				NOT = { is_vassal_or_below_of = ROOT_FROMFROM }
+				OR = {
+					capital_scope = { de_jure_liege_or_above = ROOT_FROMFROM }
+					de_jure_liege_or_above = ROOT_FROMFROM
+				}
 			}
 		}
 		additive_modifier = { #Candidate is a foreign non-dejure ruler.
 			value = -500
 			localisation_key = tooltip_feudal_elector_vote_encroaching_foreigner
-			NOT = { capital_scope = { de_jure_liege = FROMFROM } }
+			capital_scope = { de_jure_liege_or_above = FROMFROM }
 			FROM = {
 				is_ruler = yes 
 				NOT = { is_vassal_or_below_of = ROOT_FROMFROM }
+				NOR = {
+					capital_scope = { de_jure_liege_or_above = ROOT_FROMFROM }
+					de_jure_liege_or_above = ROOT_FROMFROM
+				}
 			}
 		}
 
