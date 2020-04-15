@@ -353,8 +353,8 @@ character_event = {
 			limit = {
 				has_character_flag = is_carloman
 			}
+			narrative_event = { id = CM.1021 }
 		}
-		narrative_event = { id = CM.1021 }
 	}
 }
 
